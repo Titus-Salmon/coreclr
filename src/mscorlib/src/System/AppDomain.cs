@@ -2590,7 +2590,6 @@ namespace System
             return false;
         }
 
-#if FEATURE_APPDOMAIN_RESOURCE_MONITORING
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
         private static extern void nEnableMonitoring();
 
@@ -2695,7 +2694,6 @@ namespace System
                 return i64LastSurvivedProcessMemory;
             }
         }
-#endif
     }
 
     /// <summary>
